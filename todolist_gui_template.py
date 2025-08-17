@@ -242,29 +242,40 @@ def render_tasks(state, tasks):
         configure_grid(row, col_weights=[1, 0])
 
         # ---------- TODO 3 ----------
+        # HINTS:
+        # - Use datetime.strptime(due, "%Y-%m-%d").date() and compare with 'today'.
+        # - Use the provided 'place' helper to grid each widget.
+        # - Create the buttons inside a small CTkFrame with fg_color="transparent".
+        # --------------------------------
+
         # A) Add a CTkLabel to show the task title at (row=0, col=0),
         #    font=("Segoe UI", 14), left aligned.
+        # YOUR CODE HERE
+
+
         # B) Add a status badge (Done/Pending) at (row=0, col=1).
         #    - text: "Done" if done else "Pending"
         #    - colors: done -> "#16a34a", pending -> "#64748b"
         #    - font=("Segoe UI", 11, "bold"), text_color="white",
         #      corner_radius=999, some padding (padx=12, pady=6)
+        # YOUR CODE HERE
+
+
         # C) Add a "Due:" label at (row=1, col=0), font=("Segoe UI", 12).
         #    If overdue and not done, show amber-ish color:
         #    meta_color = ("#a16207", "#f59e0b"); otherwise grey:
         #    meta_color = ("#6b7280", "#9ca3af")
+        # YOUR CODE HERE
+        
+        
         # D) Create a small button frame at (row=1, col=1),
         #    and add two buttons:
         #       - "✓" (width=36, height=28), disabled if done,
         #         command = make_mark_done_command(state, tid)
         #       - "🗑" (width=36, height=28), red colors, command = make_delete_command(state, tid)
-        # --------------------------------
-        # HINTS:
-        # - Use datetime.strptime(due, "%Y-%m-%d").date() and compare with 'today'.
-        # - Use the provided 'place' helper to grid each widget.
-        # - Create the buttons inside a small CTkFrame with fg_color="transparent".
         #
         # YOUR CODE HERE
+
 
 # ---------- Run ----------
 if __name__ == "__main__":
