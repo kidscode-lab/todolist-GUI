@@ -205,5 +205,5 @@ __marimo__/
 # app sepcific files
 build/
 dist/
-todolist-gui.py
+todolist_gui.*
 .gitignore
